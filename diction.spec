@@ -1,6 +1,6 @@
 %define name diction
-%define realversion 1.10
-%define epoch   rc4
+%define realversion 1.11
+%define epoch   rc1
 %define release 1
 
 Summary: 	Text diction and style analyzer
