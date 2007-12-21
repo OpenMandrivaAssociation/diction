@@ -10,6 +10,7 @@ Release: 	%mkrel %{release}
 License: 	GPL
 Group: 		Text tools
 Source:		diction-%{realversion}-%{epoch}.tar.bz2
+BuildRoot: 	%{_tmppath}/%{name}-%{realversion}-%{release}-buildroot
 URL: 		http://www.moria.de/~michael/diction/
 
 %description
