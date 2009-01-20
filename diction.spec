@@ -1,16 +1,17 @@
-%define name diction
-%define realversion 1.11
-%define epoch   rc1
-%define release 1
+%define name	diction
+%define version 1.11
+%define epoch   1
+%define release %mkrel 1
 
 Summary: 	Text diction and style analyzer
 Name: 		%{name}
-Version:	%{realversion}%{epoch}
-Release: 	%mkrel %{release}
-License: 	GPL
+Version:	%{version}
+Release: 	%{release}
+Epoch:		%{epoch}
+License: 	GPLv3+
 Group: 		Text tools
-Source:		diction-%{realversion}-%{epoch}.tar.bz2
-BuildRoot: 	%{_tmppath}/%{name}-%{realversion}-%{release}-buildroot
+Source:		%{name}-%{version}.tar.gz
+BuildRoot: 	%{_tmppath}/%{name}-%{version}-%{release}-buildroot
 URL: 		http://www.moria.de/~michael/diction/
 
 %description
@@ -24,18 +25,18 @@ beginnings. Both commands currently support English and German
 documents.
 
 %prep
-%setup -q -n %{name}-%{realversion}
+%setup -q -n %{name}-%{version}
 
 %build
 %configure 
 %make
 
 %install
-rm -rf %{buildroot}
+%__rm -rf %{buildroot}
 %make DESTDIR=%{buildroot} install
 
 %clean
-rm -rf %{buildroot}
+%__rm -rf %{buildroot}
 
 %files
 %defattr(-, root, root)
@@ -44,5 +45,3 @@ rm -rf %{buildroot}
 %{_datadir}/diction/
 %{_datadir}/locale/
 %{_mandir}/man1/*
-
-
