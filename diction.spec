@@ -28,12 +28,12 @@ documents.
 %setup -q -n %{name}-%{version}
 
 %build
-%configure 
+%configure2_5x
 %make
 
 %install
 %__rm -rf %{buildroot}
-%make DESTDIR=%{buildroot} install
+%makeinstall_std
 
 %clean
 %__rm -rf %{buildroot}
