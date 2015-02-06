@@ -1,7 +1,7 @@
 %define name	diction
 %define version 1.11
 %define epoch   1
-%define release %mkrel 2
+%define release 3
 
 Summary: 	Text diction and style analyzer
 Name: 		%{name}
