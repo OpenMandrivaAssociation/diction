@@ -12,7 +12,7 @@ License: 	GPLv3+
 Group: 		Text tools
 Source:		%{name}-%{version}.tar.gz
 BuildRoot: 	%{_tmppath}/%{name}-%{version}-%{release}-buildroot
-URL: 		http://www.moria.de/~michael/diction/
+URL: 		https://www.moria.de/~michael/diction/
 
 %description
 GNU diction and style are free implementations of old standard Unix
