@@ -14,6 +14,11 @@ Source:		%{name}-%{version}.tar.gz
 BuildRoot: 	%{_tmppath}/%{name}-%{version}-%{release}-buildroot
 URL: 		https://www.moria.de/~michael/diction/
 
+BuildRequires:	autoconf
+BuildRequires:	automake
+BuildRequires:	libtool-base
+BuildRequires:	slibtool
+BuildRequires:	make
 %description
 GNU diction and style are free implementations of old standard Unix
 commands that are unavailable on many modern systems because they have
